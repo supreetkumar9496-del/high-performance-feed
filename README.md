@@ -1,17 +1,55 @@
-# high_performance_feed
+# 🚀 High Performance Feed App
 
-A new Flutter project.
+## 📌 Overview
+This is a high-performance Instagram-like feed app built using Flutter and Supabase.
+It focuses on smooth scrolling, optimized image loading, and efficient memory usage.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
+- Infinite scrolling feed
+- Pull-to-refresh
+- Optimistic like/unlike UI
+- Detail screen with Hero animation
+- High-resolution image viewing
+- Image caching using CachedNetworkImage
+- Backend integration with Supabase
+- Python-based image processing pipeline
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## ⚡ Performance Optimizations
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 🧠 RepaintBoundary
+Used to isolate widgets and prevent unnecessary rebuilds.
+
+### 📏 memCacheWidth
+Reduces memory usage by loading optimized image sizes.
+
+### 🖼️ Tiered Image Loading
+- Thumbnail → Feed
+- Mobile → Detail screen
+- Raw → High-res view
+
+---
+
+## 🐍 Python Pipeline
+- Converts images into multiple sizes
+- Uploads to Supabase Storage
+- Inserts URLs into database
+
+---
+
+## 🛠️ Tech Stack
+- Flutter (UI)
+- Supabase (Backend)
+- Python (Image processing)
+- CachedNetworkImage
+
+---
+
+## ▶️ How to Run
+
+```bash
+flutter pub get
+flutter run
