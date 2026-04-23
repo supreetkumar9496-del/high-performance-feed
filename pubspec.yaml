@@ -1,52 +1,25 @@
-# High Performance Feed App 🚀
+name: high_performance_feed
+description: High Performance Feed App
 
-## 📌 Overview
-This is a high-performance Instagram-like feed app built using Flutter and Supabase. It focuses on smooth scrolling, optimized image loading, and efficient backend integration.
+publish_to: 'none'
 
----
+version: 1.0.0+1
 
-## ✨ Features
-- Infinite scrolling feed
-- Pull-to-refresh
-- Optimistic like/unlike UI
-- Detail screen with Hero animation
-- High-resolution image viewing
-- Image caching using CachedNetworkImage
-- Backend integration with Supabase
-- Python-based image processing pipeline
+environment:
+  sdk: ">=3.0.0 <4.0.0"
 
----
+dependencies:
+  flutter:
+    sdk: flutter
 
-## 🛠️ Tech Stack
-- Flutter
-- Riverpod
-- Supabase (Database + Storage)
-- Python (Pillow)
+  flutter_riverpod: ^2.5.1
+  supabase_flutter: ^2.5.6
+  cached_network_image: ^3.3.1
+  url_launcher: ^6.2.6
 
----
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
 
-## ⚡ Performance Optimizations
-
-### 🔹 RepaintBoundary
-Used to reduce unnecessary UI repainting and improve scroll performance.
-
-### 🔹 memCacheWidth
-Reduces memory usage by loading optimized image sizes.
-
-### 🔹 Tiered Image Loading
-- Thumbnail → Feed
-- Mobile → Detail screen
-- Raw → High-res view
-
----
-
-## 🐍 Python Pipeline
-- Converts images into multiple sizes
-- Uploads to Supabase Storage
-- Inserts URLs into database
-
----
-
-## 🚀 How to Run
-
-### Flutter
+flutter:
+  uses-material-design: true
